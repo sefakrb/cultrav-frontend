@@ -72,7 +72,6 @@ export default {
   },
   methods: {
     resizeButtons() {
-      console.log(window.innerWidth)
       let width = window.innerWidth
       if (width < 690 && width > 500) {
         this.mobile = true
