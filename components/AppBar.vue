@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app v-resize="resizeButtons" color="#FF914D">
+  <v-app-bar width="100vw" app v-resize="resizeButtons" color="#FF914D">
     <v-row>
       <v-col class="centerize" :cols="mobile ? '3' : '5'">
         <v-img
@@ -27,11 +27,7 @@
       >
         <v-card color="transparent" elevation="0" class="mx-auto">
           <v-slide-group multiple show-arrows>
-            <v-slide-item
-              v-for="button in buttons"
-              :key="button.title"
-              v-slot="{ active }"
-            >
+            <v-slide-item v-for="button in buttons" :key="button.title">
               <v-btn depressed :class="button.class">{{ button.title }}</v-btn>
             </v-slide-item>
             <v-slide-item>
@@ -101,6 +97,7 @@ export default {
 .langButton {
   background-color: transparent !important;
   color: black;
+  font-weight: 600;
 }
 .buttonStyle {
   background-color: transparent !important;
