@@ -3,12 +3,12 @@
     v-resize="onResize"
     class="ma-0 pa-0 bg"
     style="
-      padding-top: 6% !important;
-      padding-bottom: 6% !important;
+      padding-top: 5% !important;
+      padding-bottom: 5% !important;
       width: 100vw;
     "
   >
-    <v-col class="d-flex justify-center" cols="12">
+    <v-col style="margin-bottom: 2%" class="d-flex justify-center" cols="12">
       <v-card-title
         style="font-style: italic; font-weight: 800; color: #ffffff"
         :style="{ 'font-size': titleSize }"

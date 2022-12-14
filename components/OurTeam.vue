@@ -1,6 +1,6 @@
 <template>
-  <v-row class="ma-0 pa-0">
-    <v-col class="d-flex justify-center" cols="12">
+  <v-row style="padding-top: 5% !important; width: 100vw" class="ma-0 pa-0">
+    <v-col style="padding-bottom: 2%" class="d-flex justify-center" cols="12">
       <v-card-title style="font-style: italic; font-weight: 800; font-size: 5em"
         >Ekibimiz</v-card-title
       >
