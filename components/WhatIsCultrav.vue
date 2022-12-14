@@ -2,7 +2,11 @@
   <v-row
     v-resize="onResize"
     class="ma-0 pa-0 bg"
-    style="padding-top: 6% !important; width: 100vw"
+    style="
+      padding-top: 6% !important;
+      padding-bottom: 6% !important;
+      width: 100vw;
+    "
   >
     <v-col class="d-flex justify-center" cols="12">
       <v-card-title
@@ -12,7 +16,7 @@
         Peki Cultrav Nedir?</v-card-title
       >
     </v-col>
-    <v-col style="padding-left: 5%" class="d-flex align-center" xs="12" sm="5">
+    <v-col style="padding-left: 5%" class="d-flex align-center" xs="12" sm="6">
       <v-card-text
         style="font-weight: 600; font-style: italic; color: #ffffff"
         :style="{ 'font-size': textSize, 'line-height': lineHeight }"
@@ -36,9 +40,9 @@
         duyuyoruz.</v-card-text
       >
     </v-col>
-    <v-col class="d-flex align-center" xs="12" sm="7">
+    <v-col class="d-flex align-center" xs="12" sm="6">
       <v-img
-        height="70%"
+        height="100%"
         contain
         :src="require('../static/what-is-cultrav.png')"
       ></v-img>

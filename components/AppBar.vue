@@ -14,9 +14,31 @@
           v-for="button in buttons"
           :key="button.title"
           :class="button.class"
+          nuxt
+          :to="button.route"
           >{{ button.title }}</v-btn
         >
         <v-btn depressed rounded class="loginButton">Üye Girişi</v-btn>
+
+        <div
+          style="
+            background-color: white;
+            border-bottom-left-radius: 20px 20px;
+            border-bottom-right-radius: 20px 20px;
+            color: black;
+            font-weight: 800;
+            height: 100%;
+            min-width: 45px;
+            margin-bottom: 4%;
+            margin-left: 5%;
+            padding-bottom: 1%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+          "
+        >
+          EN
+        </div>
       </v-col>
 
       <v-col
@@ -28,10 +50,22 @@
         <v-card color="transparent" elevation="0" class="mx-auto">
           <v-slide-group multiple show-arrows>
             <v-slide-item v-for="button in buttons" :key="button.title">
-              <v-btn depressed :class="button.class">{{ button.title }}</v-btn>
+              <v-btn depressed :class="button.class" nuxt :to="button.route">{{
+                button.title
+              }}</v-btn>
             </v-slide-item>
             <v-slide-item>
               <v-btn depressed rounded class="loginButton">Üye Girişi</v-btn>
+            </v-slide-item>
+            <v-slide-item>
+              <v-slide-item>
+                <v-btn
+                  class="langButton"
+                  style="color: black; font-weight: 800"
+                  depressed
+                  >EN</v-btn
+                >
+              </v-slide-item>
             </v-slide-item>
           </v-slide-group>
         </v-card>
@@ -48,20 +82,20 @@ export default {
       colResize: false,
       buttons: [
         {
-          title: 'EN',
-          class: 'langButton',
-        },
-        {
           title: 'Blog',
           class: 'buttonStyle',
+          route: 'blog',
         },
+
         {
           title: 'Hakkımızda',
           class: 'buttonStyle',
+          route: 'aboutUs',
         },
         {
           title: 'İletişim',
           class: 'buttonStyle',
+          route: 'connect',
         },
       ],
     }
@@ -97,7 +131,7 @@ export default {
 .langButton {
   background-color: transparent !important;
   color: black;
-  font-weight: 600;
+  font-weight: 800;
 }
 .buttonStyle {
   background-color: transparent !important;

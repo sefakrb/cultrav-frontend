@@ -1,14 +1,14 @@
 <template>
   <v-row class="ma-0 pa-0">
-    <v-col style="height: calc(100vh - 64px)" class="ma-0 pa-0" cols="12">
+    <v-col class="ma-0 pa-0" cols="12">
       <v-carousel
-        height="100%"
+        height="75vh"
         cycle
         hide-delimiter-background
         show-arrows-on-hover
       >
         <v-carousel-item v-for="(slide, i) in slides" :key="i">
-          <v-img width="100%" :src="require('../static/' + slide.image)">
+          <v-img min-height="75vh" :src="require('../static/' + slide.image)">
             <v-card
               flat
               style="
@@ -42,7 +42,7 @@
           <v-card flat height="100vh"></v-card>
         </v-col>
         <v-col cols="3">
-          <v-card color="#D9D9D9" height="100vh"></v-card>
+          <v-card color="#D9D9D9" height="100vh"> </v-card>
         </v-col>
       </v-row>
     </v-col>

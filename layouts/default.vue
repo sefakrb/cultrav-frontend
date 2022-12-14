@@ -3,7 +3,7 @@
     <AppBar></AppBar>
     <v-main>
       <Nuxt />
-      <v-footer color="#252525" padless>
+      <!-- <v-footer color="#252525" padless>
         <v-col cols="12">
           <v-card-text style="color: white" class="text-center"
             >Bize ulaşın!</v-card-text
@@ -32,7 +32,7 @@
             :src="require('../static/logo-cultrav-white.png')"
           ></v-img>
         </v-col>
-      </v-footer>
+      </v-footer> -->
     </v-main>
   </v-app>
 </template>
