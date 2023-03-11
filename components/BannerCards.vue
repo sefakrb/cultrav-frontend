@@ -1,5 +1,5 @@
 <template>
-  <v-row v-resize="onResize" class="ma-0 pa-0">
+  <v-row v-resize="onResize" class="ma-0 pa-0 d-flex justify-center">
     <v-col cols="12">
       <v-card-title
         class="titleStyle"
@@ -9,27 +9,21 @@
         >Hem Gezip Hem De Öğrenmeye Başlayın!</v-card-title
       >
     </v-col>
-    <v-col class="centerize" cols="12">
-      <v-row class="centerize">
-        <v-col v-for="item in items" :key="item.title" :cols="colSize">
-          <v-card flat>
-            <v-card flat class="pt-3">
-              <v-img
-                contain
-                max-height="90px"
-                :src="require('../static/' + item.image)"
-              ></v-img>
-            </v-card>
+    <v-col v-for="item in items" :key="item.title" :cols="colSize">
+      <v-card flat>
+        <v-card flat class="pt-3">
+          <v-img
+            contain
+            max-height="90px"
+            :src="require('../static/' + item.image)"
+          ></v-img>
+        </v-card>
 
-            <v-card-title
-              style="font-weight: 600"
-              class="text-center centerize"
-              >{{ item.title }}</v-card-title
-            >
-            <v-card-text class="text-center">{{ item.text }}</v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
+        <v-card-title style="font-weight: 600" class="text-center centerize">{{
+          item.title
+        }}</v-card-title>
+        <v-card-text class="text-center">{{ item.text }}</v-card-text>
+      </v-card>
     </v-col>
   </v-row>
 </template>

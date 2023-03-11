@@ -53,11 +53,10 @@ export default {
 
   methods: {
     onResize() {
-      console.log(window.innerWidth)
       if (window.innerWidth < 425) {
         this.textSize = '0.8em'
         this.titleSize = '1.6em'
-        this.lineHeight = '15px'
+        this.lineHeight = '14px'
       } else if (window.innerWidth < 600) {
         this.textSize = '0.8em'
         this.titleSize = '2em'
