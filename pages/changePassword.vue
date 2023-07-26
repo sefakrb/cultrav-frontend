@@ -138,18 +138,13 @@ export default {
 
   computed: {
     enableChangePassword() {
-      if (
+      return !(
         this.oldPassword &&
         this.newPassword &&
         this.newPasswordAgain &&
         this.newPassword === this.newPasswordAgain
-      ) {
-        return false
-      }
-      return true
+      )
     },
   },
 }
 </script>
-
-<style></style>

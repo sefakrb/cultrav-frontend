@@ -6,7 +6,6 @@
       <v-footer
         class="footerStyle"
         style="max-width: 100vw !important; overflow: hidden"
-        padless
       >
         <!-- logo ve social media -->
         <v-col
@@ -139,11 +138,7 @@
               <v-card-text class="footerTextStyle">Blog</v-card-text>
             </a>
           </div>
-          <!-- <div v-if="this.currentWidth > 940" class="ma-0 mx-3 pa-0">
-            <a style="text-decoration: none">
-              <v-card-text class="footerTextStyle">Bize Ulaşın</v-card-text>
-            </a>
-          </div> -->
+
           <div v-if="this.currentWidth > 940" class="ma-0 mx-3 pa-0">
             <a style="text-decoration: none" @click="privacyDialog = true">
               <v-card-text class="footerTextStyle"
@@ -215,6 +210,12 @@ html {
     #ffac9b,
     #ffbec1
   ) !important;
+}
+
+.v-main__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footerTextStyle {

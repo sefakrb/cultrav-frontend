@@ -112,9 +112,6 @@
             </v-col>
           </v-card>
         </v-col>
-        <!-- <v-col cols="3">
-          <v-card color="#D9D9D9" height="100vh"> </v-card>
-        </v-col> -->
       </v-row>
     </v-col>
   </v-row>
@@ -158,7 +155,6 @@ export default {
   height: 100%;
   width: 100%;
   align-items: flex-end;
-
   background: linear-gradient(
     180deg,
     rgba(30, 30, 30, 0) 0%,

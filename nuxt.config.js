@@ -1,7 +1,16 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  // ssr: false,
+  target: 'static',
+  // fallback: true,
+  router: {
+    base: '/',
+  },
+  generate: {
+    // subFolders: false,
+    // nonRootPageExtension: '', //overrides from '.html' to nothing
+  },
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Cultrav',
@@ -21,7 +30,10 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{src: '~/plugins/vue2-google-maps.js', mode: 'client'}, {src: '~/plugins/vue-toastification.js', mode: 'client'}],
+  plugins: [
+    { src: '~/plugins/vue2-google-maps.js', mode: 'client' },
+    { src: '~/plugins/vue-toastification.js', mode: 'client' },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -71,7 +83,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^vue2-google-maps($|\/)/]
+    transpile: [/^vue2-google-maps($|\/)/],
   },
 
   auth: {

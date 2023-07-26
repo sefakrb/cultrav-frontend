@@ -1,10 +1,6 @@
 <template>
   <v-row class="ma-0 pa-0">
     <v-col cols="12" class="d-flex justify-center">
-      <!-- 
-        :hint="`${select.state}, ${select.abbr}`"
-        item-value="abbr"
-       -->
       <v-col cols="7">
         <v-progress-linear
           v-if="!isLocated"
@@ -27,7 +23,6 @@
     </v-col>
 
     <v-col cols="12">
-      <!-- <GmapAutocomplete @place_changed="setPlace" /> -->
       <gmap-map :zoom="8" :center="center" style="width: 100%; height: 70vh">
         <gmap-marker
           :key="index"
@@ -349,7 +344,7 @@ export default {
     },
 
     getMobileOperatingSystem() {
-      var userAgent = navigator.userAgent || navigator.vendor || window.opera
+      let userAgent = navigator.userAgent || navigator.vendor || window.opera
 
       if (/android/i.test(userAgent)) {
         return 'android'
@@ -379,7 +374,6 @@ export default {
             lat: 39.925533,
             lng: 32.866287,
           }
-          // (this.currentPlace = { position: this.center });
           this.isLocated = true
         }
       )

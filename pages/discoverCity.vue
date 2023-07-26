@@ -132,7 +132,7 @@
           <v-slide-item
             v-for="locationInfos in fetchedCityLocations"
             :key="'Tarihi' + locationInfos.locationID"
-            v-slot="{ active, toggle }"
+            v-slot="{ toggle }"
           >
             <v-card
               color="transparent"
@@ -236,7 +236,7 @@
           <v-slide-item
             v-for="activity in externalActivitiesAndTours"
             :key="'Activity' + activity.id"
-            v-slot="{ active, toggle }"
+            v-slot="{ toggle }"
           >
             <v-card
               color="transparent"
@@ -276,7 +276,7 @@
                 <!-- aktivite yıldızı -->
                 <div
                   class="ma-0 pa-0"
-                  style="dipslay: flex; text-align: center"
+                  style="display: flex; text-align: center"
                   id="star-part"
                 >
                   <v-icon
@@ -334,7 +334,7 @@
           <v-slide-item
             v-for="hotel in externalHotels"
             :key="'Hotel' + hotel.id"
-            v-slot="{ active, toggle }"
+            v-slot="{ toggle }"
           >
             <v-card
               color="transparent"
@@ -374,7 +374,7 @@
                 <!-- hotel yıldızı -->
                 <div
                   class="ma-0 pa-0"
-                  style="dipslay: flex; text-align: center"
+                  style="display: flex; text-align: center"
                   id="star-part"
                 >
                   <v-icon
@@ -395,11 +395,6 @@
                     {{ hotel.starCount }} / 5
                   </span>
                 </div>
-
-                <!-- hotel fiyatı -->
-                <!-- <v-card-text style="text-align: center"
-                  >Fiyat: {{ hotel.price }} ₺</v-card-text
-                > -->
               </div>
             </v-card>
           </v-slide-item>
@@ -529,22 +524,6 @@ export default {
     rgba(30, 30, 30, 0.75) 100%
   );
   word-break: break-word;
-}
-
-#cultral-places {
-  // ::v-deep .theme--light.v-divider {
-  //   border-color: #ff914d !important;
-  // }
-
-  // ::v-deep .v-icon.v-icon {
-  //   border-radius: 15px;
-  //   border: 2px solid #ff914d !important;
-  //   background-color: #ff914d;
-  // }
-
-  // ::v-deep .theme--light.v-icon.v-icon {
-  //   color: white !important;
-  // }
 }
 
 #realStar {
