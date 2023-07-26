@@ -1,68 +1,72 @@
 # cultrav-frontend
 
-## Build Setup
+<!-- PROJECT LOGO -->
+<div name="readme-top"  align="center">
+    <img style="width:30%;height:30%" src="static/logo-cultrav.svg" alt="Logo">
+</div>
 
-```bash
-# install dependencies
-$ npm install
+<br />
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+        <a href="#built-with">Built With</a>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+## About The Project
 
-# generate static project
-$ npm run generate
-```
+This website is for Cultrav which is an application that offers you information about all the historical places you wonder by using artificial intelligence and image processing technology.
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+### Built With
 
-## Special Directories
+- [![Vue][vue.js]][vue-url]
+- [![Nuxt][nuxt]][nuxt-url]
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `assets`
+## Pages
+#### Home
+  <img src="static/ss/ana.png" alt="Logo">
+  
+#### Login & Register
+  <img src="static/ss/login.png" alt="Logo" >
+  
+#### Register
+  <img src="static/ss/register.png" alt="Logo">  
+  
+#### Blog
+  <img src="static/ss/blog1.png" alt="Logo" >
+  
+#### About Us
+  <img src="static/ss/abu1.png" alt="Logo" >
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+#### Discover
+  <img src="static/ss/discover.png" alt="Logo" >
+  <img src="static/ss/dc1.png" alt="Logo" >
+  <img src="static/ss/dc2.png" alt="Logo" >
+  
+#### Map
+  <img src="static/ss/map1.png" alt="Logo" >
+  <img src="static/ss/map2.png" alt="Logo" >
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+## Contact
 
-### `components`
+Sefa Karabaş - sefaa.karabas@gmail.com
+Project Link: [https://github.com/sefakrb/cultrav-frontend](https://github.com/sefakrb/cultrav-frontend)
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+[vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[vue-url]: https://vuejs.org/
+[nuxt]: https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82
+[nuxt-url]: https://nuxtjs.org/
